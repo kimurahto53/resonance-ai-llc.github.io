@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>業務内容 | 照応知研究合同会社</title>
+  <style>
+    :root{
+      --nav:#0f172a;     /* 濃紺 */
+      --bg:#f8fafc;      /* 薄グレー（ページ背景） */
+      --ink:#111827;     /* 文字色 */
+      --card:#ffffff;    /* カード背景 */
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      background:var(--bg);
+      color:var(--ink);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+        "Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;
+      font-size:16px; line-height:1.7;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    header{background:var(--nav);color:#fff}
+    .brand{display:flex;align-items:center;gap:14px;padding:18px 0}
+    .brand img{height:56px}
+    .brand h1{margin:0;font-size:22px}
+    .brand p{margin:0;opacity:.9}
+    nav{border-top:1px solid rgba(255,255,255,.12)}
+    nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:10px 0}
+    nav a{color:#fff;text-decoration:none}
+    nav a:hover{text-decoration:underline}
+    nav a.active{text-decoration:underline}
+    section{padding:42px 0}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:var(--radius);padding:22px}
+    h2{
+      margin:0 0 14px;
+      background:var(--nav);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:8px;
+      font-size:20px;
+    }
+    .grid{display:grid;gap:22px}
+    @media(min-width:900px){ .grid-2{grid-template-columns:1fr 1fr} }
+    footer{background:var(--nav);color:#e5e7eb;padding:28px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="logo.png" alt="Company Logo">
+        <div>
+          <h1>照応知研究合同会社</h1>
+          <p>Resonant Intelligence Research LLC</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="container">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="services.html" class="active">業務内容</a></li>
+          <li><a href="patents.html">特許情報・著書・論文</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="card">
+        <h2>業務内容</h2>
+        <p>
+          照応知研究合同会社は、照応知AIの理論と技術を社会に実装するため、幅広い分野で研究・開発・コンサルティングを行っています。
+        </p>
+        <ul>
+          <li>知識創発、人工知能、情報処理、感性工学、倫理設計等に関する研究開発および特許の取得・管理・ライセンス販売</li>
+          <li>人工知能を活用したソフトウェア、デバイス、システム、防衛・医療・教育・福祉等の応用技術の設計、開発、販売、提供およびコンサルティング</li>
+          <li>出版、講演、展示、教育コンテンツの企画・制作・販売およびその周辺事業</li>
+          <li>前各号に附帯または関連する一切の業務</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:22px;">
+        <h2>得意とする分野</h2>
+        <ul>
+          <li>AIシステムの倫理制御等に関する調査研究およびコンサルテーション</li>
+          <li>指揮統制システム関連の業務、システム調査研究およびコンサルテーション</li>
+          <li>危機管理システム関連の業務、システム調査研究およびコンサルテーション</li>
+          <li>ナショナルセキュリティ、AI、サイバーセキュリティ、情報通信分野での情報収集、分析および評価</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2025 照応知研究合同会社 / Resonant Intelligence Research LLC
+    </div>
+  </footer>
+</body>
+</html>
