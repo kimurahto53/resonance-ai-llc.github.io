@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>お問い合わせ | 照応知研究合同会社</title>
+  <style>
+    :root{ --nav:#0f172a; --bg:#f8fafc; --ink:#111827; --card:#ffffff; --radius:12px; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{
+      background:var(--bg); color:var(--ink);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+        "Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;
+      font-size:16px; line-height:1.7;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    header{background:var(--nav);color:#fff}
+    .brand{display:flex;align-items:center;gap:14px;padding:18px 0}
+    .brand img{height:56px}
+    .brand h1{margin:0;font-size:22px}
+    .brand p{margin:0;opacity:.9}
+    nav{border-top:1px solid rgba(255,255,255,.12)}
+    nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:10px 0}
+    nav a{color:#fff;text-decoration:none}
+    nav a:hover{text-decoration:underline}
+    nav a.active{text-decoration:underline}
+    section{padding:42px 0}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:var(--radius);padding:22px}
+    h2{
+      margin:0 0 14px; background:var(--nav); color:#fff;
+      padding:10px 14px; border-radius:8px; font-size:20px;
+    }
+    footer{background:var(--nav);color:#e5e7eb;padding:28px 0;margin-top:40px}
+    .muted{color:#6b7280}
+    /* スマホでの余白最適化 */
+    @media (max-width: 480px){
+      .brand img{height:48px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="logo.png" alt="Company Logo">
+        <div>
+          <h1>照応知研究合同会社</h1>
+          <p>Resonant Intelligence Research LLC</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="container">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="services.html">業務内容</a></li>
+          <li><a href="patents.html">特許情報・著書・論文</a></li>
+          <li><a href="contact.html" class="active">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="card">
+        <h2>お問い合わせフォーム</h2>
+        <p class="muted">※ フォームは Zoho の安全なサーバーで処理されます。送信後は担当より折り返しご連絡します。</p>
+
+        <!-- ▼ Zoho Forms（ご提供のiframeコードをそのまま使用） -->
+        <iframe aria-label="お問い合わせフォーム" frameborder="0"
+          style="height:500px;width:99%;border:none;"
+          src="https://forms.zohopublic.jp/hatsuokimuraresonan1/form/Untitled/formperma/pTJaMTeo7rPH15_eTu2OP13qptomKtGxQgMIfqYYcaM">
+        </iframe>
+        <!-- ▲ ここまで -->
+
+        <p class="muted" style="margin-top:10px;">
+          ※ フォームの高さは内容に応じて <code>style="height:…"</code> を 600–900px 程度に調整してください。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2025 照応知研究合同会社 / Resonant Intelligence Research LLC
+    </div>
+  </footer>
+</body>
+</html>
