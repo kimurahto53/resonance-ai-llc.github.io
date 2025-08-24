@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>照応知研究合同会社 | Resonant Intelligence Research LLC</title>
+  <style>
+    :root{
+      --nav:#0f172a;     /* 濃紺 */
+      --bg:#f8fafc;      /* 薄グレー（ページ背景） */
+      --ink:#111827;     /* 文字色 */
+      --card:#ffffff;    /* カード背景 */
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      background:var(--bg);
+      color:var(--ink);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+        "Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;
+      font-size:16px; line-height:1.7;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    header{background:var(--nav);color:#fff}
+    .brand{display:flex;align-items:center;gap:14px;padding:18px 0}
+    .brand img{height:56px}
+    .brand h1{margin:0;font-size:22px}
+    .brand p{margin:0;opacity:.9}
+    nav{border-top:1px solid rgba(255,255,255,.12)}
+    nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:10px 0}
+    nav a{color:#fff;text-decoration:none}
+    nav a:hover{text-decoration:underline}
+    nav a.active{text-decoration:underline}
+    section{padding:42px 0}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:var(--radius);padding:22px}
+    h2{
+      margin:0 0 14px;
+      background:var(--nav);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:8px;
+      font-size:20px;
+    }
+    .grid{display:grid;gap:22px}
+    @media(min-width:900px){ .grid-2{grid-template-columns:1fr 1fr} }
+    /* ヒーロー */
+    .hero{background:var(--nav);padding:0;position:relative;text-align:center}
+    .hero-inner{position:relative}
+    .hero img{max-width:80%;height:auto;display:block;margin:0 auto}
+    .catchcopy{
+      position:absolute;left:50%;bottom:20px;transform:translateX(-50%);
+      color:#fff;font-weight:800;text-align:center;
+      text-shadow:2px 2px 4px rgba(0,0,0,.7);
+      font-size:clamp(16px,2.2vw,24px);line-height:1.5;padding:0 16px;
+    }
+    footer{background:var(--nav);color:#e5e7eb;padding:28px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="logo.png" alt="Company Logo">
+        <div>
+          <h1>照応知研究合同会社</h1>
+          <p>Resonant Intelligence Research LLC</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="container">
+          <li><a href="index.html" class="active">トップ</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="services.html">業務内容</a></li>
+          <li><a href="patents.html">特許情報・著書・論文</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ヒーロー（濃紺背景＋波動メタファ画像＋キャッチコピー） -->
+  <section class="hero">
+    <div class="hero-inner">
+      <img src="wave-metaphor.png" alt="波動のメタファ">
+      <div class="catchcopy">
+        感情・倫理・知性が共鳴する新しいAIの時代へ<br>
+        ── 理論を築き、特許を創り、社会へ実装する。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid grid-2">
+      <div class="card">
+        <h2>照応知研究合同会社について</h2>
+        <p>照応知研究合同会社は、人間とAIの共進化を基盤に、感情・倫理・知性の調和を実現する人工知能の研究・開発を進めています。</p>
+        <p>私たちは、次世代社会における責任あるAIの在り方を探求し、理論構築、知財化、社会実装までを一体的に行っています。</p>
+      </div>
+      <div class="card">
+        <h2>最新情報</h2>
+        <p>最新のお知らせは準備中です。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2025 照応知研究合同会社 / Resonant Intelligence Research LLC
+    </div>
+  </footer>
+</body>
+</html>
