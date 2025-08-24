@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>特許情報・著書・論文 | 照応知研究合同会社</title>
+  <style>
+    :root{
+      --nav:#0f172a;     /* 濃紺 */
+      --bg:#f8fafc;      /* 薄グレー（ページ背景） */
+      --ink:#111827;     /* 文字色 */
+      --card:#ffffff;    /* カード背景 */
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      background:var(--bg);
+      color:var(--ink);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+        "Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;
+      font-size:16px; line-height:1.7;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    header{background:var(--nav);color:#fff}
+    .brand{display:flex;align-items:center;gap:14px;padding:18px 0}
+    .brand img{height:56px}
+    .brand h1{margin:0;font-size:22px}
+    .brand p{margin:0;opacity:.9}
+    nav{border-top:1px solid rgba(255,255,255,.12)}
+    nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:10px 0}
+    nav a{color:#fff;text-decoration:none}
+    nav a:hover{text-decoration:underline}
+    nav a.active{text-decoration:underline}
+    section{padding:42px 0}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:var(--radius);padding:22px}
+    h2{
+      margin:0 0 14px;
+      background:var(--nav);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:8px;
+      font-size:20px;
+    }
+    .grid{display:grid;gap:22px}
+    @media(min-width:900px){ .grid-2{grid-template-columns:1fr 1fr} }
+    footer{background:var(--nav);color:#e5e7eb;padding:28px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="logo.png" alt="Company Logo">
+        <div>
+          <h1>照応知研究合同会社</h1>
+          <p>Resonant Intelligence Research LLC</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="container">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="services.html">業務内容</a></li>
+          <li><a href="patents.html" class="active">特許情報・著書・論文</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="card">
+        <h2>特許情報</h2>
+        <ul>
+          <li>民生分野を中心としたAI制御技術の特許出願を準備中</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:22px;">
+        <h2>著書</h2>
+        <ul>
+          <li>専門家向け研究書と一般読者向け解説書を準備中</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:22px;">
+        <h2>論文</h2>
+        <ul>
+          <li>国際学術誌への投稿を計画し、研究成果を広く発表予定</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2025 照応知研究合同会社 / Resonant Intelligence Research LLC
+    </div>
+  </footer>
+</body>
+</html>
